@@ -1,4 +1,4 @@
-// package 백준알고리즘;
+// package Step6;
 
 import java.io.BufferedReader;
 import java.io.IOException;
