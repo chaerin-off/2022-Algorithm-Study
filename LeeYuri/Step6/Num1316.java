@@ -1,12 +1,12 @@
 package Step6;
 
 /*
- * ±×·ì ´Ü¾î¶õ ´Ü¾î¿¡ Á¸ÀçÇÏ´Â ¸ðµç ¹®ÀÚ¿¡ ´ëÇØ¼­, °¢ ¹®ÀÚ°¡ ¿¬¼ÓÇØ¼­ ³ªÅ¸³ª´Â °æ¿ì¸¸À» ¸»ÇÑ´Ù. ¿¹¸¦ µé¸é, ccazzzzbb´Â c, a, z, b°¡ ¸ðµÎ ¿¬¼ÓÇØ¼­ ³ªÅ¸³ª°í, 
- * kinµµ k, i, nÀÌ ¿¬¼ÓÇØ¼­ ³ªÅ¸³ª±â ¶§¹®¿¡ ±×·ì ´Ü¾îÀÌÁö¸¸, aabbbccb´Â b°¡ ¶³¾îÁ®¼­ ³ªÅ¸³ª±â ¶§¹®¿¡ ±×·ì ´Ü¾î°¡ ¾Æ´Ï´Ù.
- * ´Ü¾î N°³¸¦ ÀÔ·ÂÀ¸·Î ¹Þ¾Æ ±×·ì ´Ü¾îÀÇ °³¼ö¸¦ Ãâ·ÂÇÏ´Â ÇÁ·Î±×·¥À» ÀÛ¼ºÇÏ½Ã¿À.
+ * ê·¸ë£¹ ë‹¨ì–´ëž€ ë‹¨ì–´ì— ì¡´ìž¬í•˜ëŠ” ëª¨ë“  ë¬¸ìžì— ëŒ€í•´ì„œ, ê° ë¬¸ìžê°€ ì—°ì†í•´ì„œ ë‚˜íƒ€ë‚˜ëŠ” ê²½ìš°ë§Œì„ ë§í•œë‹¤. ì˜ˆë¥¼ ë“¤ë©´, ccazzzzbbëŠ” c, a, z, bê°€ ëª¨ë‘ ì—°ì†í•´ì„œ ë‚˜íƒ€ë‚˜ê³ , 
+ * kinë„ k, i, nì´ ì—°ì†í•´ì„œ ë‚˜íƒ€ë‚˜ê¸° ë•Œë¬¸ì— ê·¸ë£¹ ë‹¨ì–´ì´ì§€ë§Œ, aabbbccbëŠ” bê°€ ë–¨ì–´ì ¸ì„œ ë‚˜íƒ€ë‚˜ê¸° ë•Œë¬¸ì— ê·¸ë£¹ ë‹¨ì–´ê°€ ì•„ë‹ˆë‹¤.
+ * ë‹¨ì–´ Nê°œë¥¼ ìž…ë ¥ìœ¼ë¡œ ë°›ì•„ ê·¸ë£¹ ë‹¨ì–´ì˜ ê°œìˆ˜ë¥¼ ì¶œë ¥í•˜ëŠ” í”„ë¡œê·¸ëž¨ì„ ìž‘ì„±í•˜ì‹œì˜¤.
  * 
- * Ã¹Â° ÁÙ¿¡ ´Ü¾îÀÇ °³¼ö NÀÌ µé¾î¿Â´Ù. NÀº 100º¸´Ù ÀÛ°Å³ª °°Àº ÀÚ¿¬¼öÀÌ´Ù. µÑÂ° ÁÙºÎÅÍ N°³ÀÇ ÁÙ¿¡ ´Ü¾î°¡ µé¾î¿Â´Ù. 
- * ´Ü¾î´Â ¾ËÆÄºª ¼Ò¹®ÀÚ·Î¸¸ µÇ¾îÀÖ°í Áßº¹µÇÁö ¾ÊÀ¸¸ç, ±æÀÌ´Â ÃÖ´ë 100ÀÌ´Ù.
+ * ì²«ì§¸ ì¤„ì— ë‹¨ì–´ì˜ ê°œìˆ˜ Nì´ ë“¤ì–´ì˜¨ë‹¤. Nì€ 100ë³´ë‹¤ ìž‘ê±°ë‚˜ ê°™ì€ ìžì—°ìˆ˜ì´ë‹¤. ë‘˜ì§¸ ì¤„ë¶€í„° Nê°œì˜ ì¤„ì— ë‹¨ì–´ê°€ ë“¤ì–´ì˜¨ë‹¤. 
+ * ë‹¨ì–´ëŠ” ì•ŒíŒŒë²³ ì†Œë¬¸ìžë¡œë§Œ ë˜ì–´ìžˆê³  ì¤‘ë³µë˜ì§€ ì•Šìœ¼ë©°, ê¸¸ì´ëŠ” ìµœëŒ€ 100ì´ë‹¤.
  */
 
 import java.util.Scanner;
@@ -15,23 +15,23 @@ public class Main {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);	
 		int n = sc.nextInt(), count = 0;
-		boolean check;							// ¹®ÀÚ°¡ ¿¬¼ÓÀ¸·Î ³ªÅ¸³­ °æ¿ìÀÎÁö ¾Æ´ÑÁö È®ÀÎ
+		boolean check;						// ë¬¸ìžê°€ ì—°ì†ìœ¼ë¡œ ë‚˜íƒ€ë‚œ ê²½ìš°ì¸ì§€ ì•„ë‹Œì§€ í™•ì¸
 		
 		for(int i=0;i<n;i++) {
 			String s = sc.next();			
-			int[] alphabet = new int[26];		// ¾î¶² ¹®ÀÚ°¡ »ç¿ëµÇ¾ú¾ú´ÂÁö ÀúÀåÇÒ ¹è¿­
-			check = true;						// check = trueÀÌ¸é ¹®ÀÚ°¡ ¿¬¼ÓÇØ¼­ ³ªÅ¸³ª´Â °æ¿ì¸¸À» ÀÇ¹Ì
+			int[] alphabet = new int[26];			// ì–´ë–¤ ë¬¸ìžê°€ ì‚¬ìš©ë˜ì—ˆì—ˆëŠ”ì§€ ì €ìž¥í•  ë°°ì—´
+			check = true;					// check = trueì´ë©´ ë¬¸ìžê°€ ì—°ì†í•´ì„œ ë‚˜íƒ€ë‚˜ëŠ” ê²½ìš°ë§Œì„ ì˜ë¯¸
 			
 			for(int j=0;j<s.length();j++) {
 				char a = s.charAt(j); 		
-				if(alphabet[a - 'a'] > 0) {		// ¸¸¾à ¹è¿­¿¡ ÀÌ¹Ì 1 ÀÌ»óÀÇ °ªÀÌ ÀÖ´Ù¸é
-					if(a != s.charAt(j-1)) {	// ÀÌÀüÀÇ ¾ËÆÄºª°ú ºñ±³ÇØ¼­ ´Ù¸£´Ù¸é
-						check = false;			// ¿¬¼ÓÇØ¼­ ³ª¿Â °ÍÀÌ ¾Æ´Ï¹Ç·Î checkÀ» false·Î º¯°æ
-						break;					// ³»ºÎ for¹®À» Áß´Ü½ÃÅ´
+				if(alphabet[a - 'a'] > 0) {		// ë§Œì•½ ë°°ì—´ì— ì´ë¯¸ 1 ì´ìƒì˜ ê°’ì´ ìžˆë‹¤ë©´
+					if(a != s.charAt(j-1)) {	// ì´ì „ì˜ ì•ŒíŒŒë²³ê³¼ ë¹„êµí•´ì„œ ë‹¤ë¥´ë‹¤ë©´
+						check = false;		// ì—°ì†í•´ì„œ ë‚˜ì˜¨ ê²ƒì´ ì•„ë‹ˆë¯€ë¡œ checkì„ falseë¡œ ë³€ê²½
+						break;			// ë‚´ë¶€ forë¬¸ì„ ì¤‘ë‹¨ì‹œí‚´
 					}
 				} else alphabet[a - 'a']++;
 			}
-			if(check) count++;					// check°¡ trueÀÏ¶§¸¸ count++
+			if(check) count++;				// checkê°€ trueì¼ë•Œë§Œ count++
 		}
 		System.out.print(count);
 	}
